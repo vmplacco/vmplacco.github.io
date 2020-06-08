@@ -1,0 +1,111 @@
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83933845-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-83933845-6');
+</script>
+</head>
+<title>Random walk</title>
+<h3> Random walk</h3>
+<h4 style="margin: 0">author: Vinicius Placco (<a href="http://vmplacco.github.io/">http://vmplacco.github.io/</a>)</h4>
+
+<br>
+<pre style="font-size: 15px; width: 800px; white-space: normal; text-align: justify">
+Random walk is a stochastic process that has applications in many different
+areas. It is essentially described as a succession of random steps (integers,
+floats) on a given parameter space. Applications include the movement of
+molecules in a gas, population genetics, fluctuating stock prices, Markov
+chains, Brownian motion, behavioral psychology, among many others!
+
+<br><br>
+
+This first example shows a friendly competition between four "walkers". The goal
+is to reach the farthest distance from the center after 2,000 steps. The walkers
+start at (0,0) and each step "i" within [0:2000] is given by:
+<br><br>
+(x<sub>i+1</sub>,y<sub>i+1</sub>) = (x<sub>i</sub>,y<sub>i</sub>) +
+(&Delta;<sub>x</sub>,&Delta;<sub>y</sub>)
+
+<br><br>
+
+where &Delta;<sub>x</sub> and &Delta;<sub>y</sub> are random floats in the
+[-0.05:0.05] interval with five decimal places.
+
+<br><br>
+
+<video width="700" controls>
+  <source src="rwalkN.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<br><br>
+
+The black filled symbols show the current position of the walkers and the gray
+symbols denote the maximum distance from the center. The circles are drawn for
+easier visualization. In this case, green-walker won. I ran 1,000 competitions
+and, not surprisingly, the winning fractions for the four walkers are 22%
+(blue), 25% (red), 26% (green), and 27% (yellow). Below is another example of
+the same simulation with a different outcome.
+
+<br><br>
+
+<video width="700" controls poster="poster1.png">
+  <source src="rwalk.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<br><br>
+
+The second example below is a more "traditional" random walk. In this case,
+there are six walkers and they can only move vertically or horizontally, having
+one of four choices of steps: (0,1), (0,-1), (1,0), and (-1,0).
+
+<br><br>
+<video width="700" controls poster="poster2.png">
+  <source src="rwalk2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<br><br>
+
+The third example goes back to the steps with varying sizes in both directions.
+The axis in both panels are independent, which helps visualize the steps of
+different sizes.
+
+<br><br>
+<video width="700" controls>
+  <source src="rwalk2b.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<br><br>
+
+The next video is just a single walker going for 5,000 steps, not much else...
+
+<br><br>
+<video width="400" controls>
+  <source src="rwalk2c.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<br><br>
+
+The last video is just an experiment with one walker always on the center of the
+parameter space. It is a little harder to follow but I think it gives a better
+idea on how stochastic the process really is!
+
+<br><br>
+<video width="400" controls>
+  <source src="rwalk3.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<br>
+<br>
+Made with bash + gshuf + gnuplot + convert + ffmpeg 
+<br>
+<a
+href="https://en.wikipedia.org/wiki/Random_walk">https://en.wikipedia.org/wiki/Random_walk</a>
+</pre>
+
+</html>

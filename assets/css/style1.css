@@ -1,0 +1,114 @@
+<style type="text/css">
+
+div.main {}
+div.main 
+{
+border-color: white;
+background-color: #c3d0d4;
+font-variant: small-caps;
+font-size:10pt;
+text-align: left;
+border-style: outset;
+cursor: crosshair;
+border-width: 3px;
+padding: 1em;
+width: 280px;
+position: absolute;
+top: 15px;
+left: 15px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+
+div.main2 {}
+div.main2
+{
+border-color: white;
+background-color: lightgreen;
+font-variant: small-caps;
+font-size:10pt;
+text-align: left;
+border-style: outset;
+cursor: crosshair;
+border-width: 3px;
+padding: 1em;
+width: 270px;
+position: absolute;
+top: 15px;
+left: 15px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+
+div.main3 {}
+div.main3
+{
+border-color: white;
+background-color: white;
+font-variant: small-caps;
+text-align: left;
+border-style: outset;
+cursor: crosshair;
+border-width: 3px;
+padding: 1em;
+position: absolute;
+top: 25px;
+left: 360px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+}
+
+a.menu5:link 
+{ 
+ color: black; 
+ text-decoration: none;
+ font-size:8pt;
+ font-variant: small-caps;
+ font-weight: bold;
+} 
+a.menu5:visited 
+{ 
+ color: lightblue; 
+ text-decoration: none;
+ font-size:8pt;
+ font-variant: small-caps;
+ font-weight: bold;
+} 
+a.menu5:hover 
+{ 
+ background-color: #E8E8E8;
+ color: red;
+ text-decoration: underline; 
+ font-size:8pt;
+ font-weight: bold;
+} 
+a.menu5:active 
+{ 
+ color: green; 
+ font-size:8pt;
+ text-decoration: none;
+ font-variant: small-caps;
+ font-weight: bold;
+}
+
+div.disc {}
+div.disc 
+{
+border-color: white;
+background-color: #c3d0d4;
+font-variant: small-caps;
+font-size:10pt;
+text-align: left;
+border-style: outset;
+cursor: crosshair;
+border-width: 3px;
+padding: 1em;
+width: 280px;
+position: absolute;
+top: 400px;
+left: 15px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+
+</style>

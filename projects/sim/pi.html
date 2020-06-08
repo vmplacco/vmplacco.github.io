@@ -1,0 +1,31 @@
+<html>
+<title>MC π</title>
+<h3> Monte Carlo Integration - π</h3>
+<h4 style="margin: 0">author: Vinicius Placco (<a href="http://vmplacco.github.io/">http://vmplacco.github.io/</a>)</h4>
+
+<br>
+<pre style="font-size: 15px; width: 1000px; text-align: justify">
+A very simple (and illustrative) exercise in estimating the value of π with a
+Monte Carlo method. This contains 1.6 million points randomly generated inside a
+square of size 1.0. The final accuracy is lower than 0.002%.
+<br>
+
+<video width="800" controls>
+  <source src="pi2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<br>
+Made with R + bash + gnuplot + convert + ffmpeg 
+<br>
+terminal one-liner to estimate π:
+
+> a=1000000
+> paste <(jot -r -p 10 $a -0.5 0.5) \
+        <(jot -r -p 10 $a -0.5 0.5) | 
+        awk '($1^2+$2^2)<=0.5^2' | wc -l | 
+	xargs | awk -v a=$a '{print ($1*4)/(a)}'
+> 3.14176
+</pre>
+
+</html>

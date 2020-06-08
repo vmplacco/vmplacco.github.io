@@ -1,0 +1,99 @@
+<html lang="en">
+
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83933845-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-83933845-5');
+</script>
+<title>IAU Geographical and Gender Distribution of Individual Members</title>
+<meta charset="utf-8">
+</head>
+
+<pre style="font-size: 15px; width: 1200px; white-space: normal; text-align: justify">
+<br>
+<hr>
+<h3 style="margin: 0">Geographical and Gender Distribution of Individual Members of the International Astronomical Union</h3>
+<hr>
+<br>
+<h4 style="margin: 0">author: Vinicius Placco (<a href="http://vmplacco.github.io/">http://vmplacco.github.io/</a>)</h4>
+<h4 style="margin: 0">permanent link: (<a href="https://www3.nd.edu/~vplacco/iau/">https://www3.nd.edu/~vplacco/iau/</a>)</h4>
+
+<br><br>
+This is a preliminary exploratory analysis combining data visualization
+techniques (using open source software - except for Tableau) with databases
+freely available online. The data source is the "geographical and gender
+distribution of individual members of the IAU" (International Astronomical
+Union). See the Reference section below for details.
+<br><br>
+The first (static) map shows the distribution of registered astronomers per
+country in the IAU database, as of September 27th, 2019. Darker colors relate to
+larger numbers of astronomers in a given country. Countries with light gray
+colors have no data available in the IAU database. Note: I did not filter data
+based on the IAU country categories.  <br><br>
+
+<img src="total2.png" width="1200pt">
+
+<br><br>
+The interactive map below uses the same underlying data, but the color scale
+relates to the percentage of reported female astronomers. By hovering your mouse
+in each country you can find additional information.
+<br><br>
+
+<object width="1250" height="850" type="text/html" data="iau_map.html" align="middle"></object>
+
+<br>
+The horizontal bars (left side) in the figure below show the percentage of
+female astronomers for member countries with at least 100 registered
+astronomers. The right side shows the total number of astronomers for each
+country listed on the left side. The color scale relates to the latitude (a
+proxy for southern and northern hemispheres).
+<br><br>
+
+<img src="total4.png" width=1200>
+
+<br><br>
+The IAU database also has limited information on the distribution of registered
+astronomers by gender and age group (for those members who reported such
+information). The last interactive figure below is a stacked vertical bar chart
+comparing the percentage of females and males for different age groups, as
+defined by the IAU. The detailed information for each group can be accessed
+by hovering your mouse on the vertical bars.
+<br><br>
+
+<object width="1250" height="650" type="text/html" data="age.html" align="middle"></object>
+
+This work is for demonstration purposes only and has no relation/affiliation with the
+IAU. Any comments or suggestions are greatly appreciated and can be sent
+directly via email (<a href="mailto:vmplacco@gmail.com">vmplacco@gmail.com</a>).
+<br><br>
+
+<hr>
+<b>Resources:</b>
+<hr>
+<br>
+
+- web scraping: bash (curl, awk, sed, cut, tr)<br>
+- static map: Tableau Desktop<br>
+- interactive map: python (pandas, numpy, pycountry, geopandas, json, geopy, bokeh)<br>
+- webpage: html, css, google analytics<br>
+
+<br>
+<hr>
+<b>References:</b>
+<hr>
+<br>
+
+- Data source: <a href="https://www.iau.org/administration/membership/individual/distribution/">https://www.iau.org/administration/membership/individual/distribution/</a> (September 27th, 2019) <br>
+- Bokeh example: <a href="https://towardsdatascience.com/a-complete-guide-to-an-interactive-geographical-map-using-python-f4c5197e23e0">https://towardsdatascience.com/a-complete-guide-to-an-interactive-geographical-map-using-python-f4c5197e23e0</a><br>
+- Stack Overflow: <a href="https://stackoverflow.com/">https://stackoverflow.com/</a>
+
+<hr>
+<br>
+</pre>
+</html>

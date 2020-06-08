@@ -1,0 +1,4 @@
+AuthName "RPA user area"
+         AuthType Basic
+         AuthUserFile /www/vplacco/www/rpa/.htpasswd
+         Require valid-user
